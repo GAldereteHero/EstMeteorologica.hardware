@@ -569,17 +569,6 @@ Wire Wire Line
 Wire Wire Line
 	3700 1900 3700 1625
 $Comp
-L power:GND #PWR0101
-U 1 1 5FDB5C8B
-P 8775 2675
-F 0 "#PWR0101" H 8775 2425 50  0001 C CNN
-F 1 "GND" H 8780 2502 50  0000 C CNN
-F 2 "" H 8775 2675 50  0001 C CNN
-F 3 "" H 8775 2675 50  0001 C CNN
-	1    8775 2675
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5FDC0613
 P 1950 1700
@@ -645,37 +634,12 @@ Wire Wire Line
 	4625 4350 4275 4350
 NoConn ~ 5925 5150
 NoConn ~ 5925 5050
-Wire Wire Line
-	8650 2250 8900 2250
-Wire Wire Line
-	8900 2150 8650 2150
-Wire Wire Line
-	8900 2050 8650 2050
-Wire Wire Line
-	8900 2350 8650 2350
-$Comp
-L Connector_Generic:Conn_01x06 J1
-U 1 1 5FE4F291
-P 8450 2150
-F 0 "J1" H 8450 1650 50  0000 C CNN
-F 1 "UART" H 8425 1725 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 8450 2150 50  0001 C CNN
-F 3 "~" H 8450 2150 50  0001 C CNN
-	1    8450 2150
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	8775 1850 8650 1850
-Wire Wire Line
-	8775 1850 8775 2675
 Text GLabel 4275 5250 0    50   Input ~ 0
 SWO
 Wire Wire Line
 	4275 5250 4625 5250
-Text GLabel 8900 1950 2    50   Input ~ 0
+Text GLabel 9200 1600 2    50   Input ~ 0
 SWO
-Wire Wire Line
-	8900 1950 8650 1950
 Wire Wire Line
 	2600 5200 2600 5050
 Wire Wire Line
@@ -779,4 +743,29 @@ $EndComp
 Wire Wire Line
 	4075 1625 4075 1900
 Connection ~ 4075 1900
+$Comp
+L Connector_Generic:Conn_01x01 J1
+U 1 1 620EF853
+P 8875 1600
+F 0 "J1" H 8793 1375 50  0000 C CNN
+F 1 "Conn_01x01" H 8793 1466 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 8875 1600 50  0001 C CNN
+F 3 "~" H 8875 1600 50  0001 C CNN
+	1    8875 1600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8825 2250 8900 2250
+Wire Wire Line
+	8825 2350 8825 2250
+Wire Wire Line
+	8900 2350 8825 2350
+Wire Wire Line
+	8825 2050 8900 2050
+Wire Wire Line
+	8825 2150 8825 2050
+Wire Wire Line
+	8900 2150 8825 2150
+Wire Wire Line
+	9075 1600 9200 1600
 $EndSCHEMATC
